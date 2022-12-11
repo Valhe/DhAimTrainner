@@ -7,6 +7,16 @@ if game.PlaceId == 9824221333 then
   local Credits = Window:NewTab("retpircS#8599")
   
   
+--notificacion al inicio  
+  
+local CoreGui = game:GetService("StarterGui") 
+  CoreGui:SetCore("SendNotification", {
+    Title = "retpircS#8599",
+    Text = "retpircS#8599",
+    Duration = 2.5,
+})
+  
+  
 --locals
 local Lp = game.Players.LocalPlayer
 
