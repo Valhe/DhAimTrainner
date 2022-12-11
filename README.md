@@ -1,7 +1,7 @@
 --Valhe DHAT
 if game.PlaceId == 9824221333 then
   local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-  local Window = Library.CreateLib("DHAT", "Midnight")
+  local Window = Library.CreateLib("DHAT", "Sentinel")
   local Main = Window:NewTab("Principal")
   local Tepe = Window:NewTab("Tp")
   local Credits = Window:NewTab("retpircS#8599")
