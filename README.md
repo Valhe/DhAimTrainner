@@ -51,7 +51,46 @@ end)
 
 
 --Main
+
+
+
+
   local Exploits = Main:NewSection("Funciones")
+
+Exploits:NewButton("NoClip(E)", "By Me", function()
+    local noclip = false
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+local mouse = player:GetMouse()
+
+mouse.KeyDown:Connect(function(key)
+    if key == "e" then
+        noclip = not noclip
+
+        if not StealthMode then
+        end
+    end
+end)
+
+while true do
+    player = game.Players.LocalPlayer
+    character = player.Character
+
+    if noclip then
+        for _, v in pairs(character:GetDescendants()) do
+            pcall(function()
+                if v:IsA("BasePart") then
+                    v.CanCollide = false
+                end
+            end)
+        end
+    end
+
+    game:GetService("RunService").Stepped:wait()
+end
+end)
+
   
   Exploits:NewButton("UIGOTO(BETA)", "BETA FOR ME", function()
       local CoreGui = game:GetService("StarterGui")
