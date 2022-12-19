@@ -8,15 +8,6 @@ if game.PlaceId == 9824221333 then
   local Credits = Window:NewTab("retpircS#8599")
   
   
---notificacion al inicio  
-  
-local CoreGui = game:GetService("StarterGui") 
-  CoreGui:SetCore("SendNotification", {
-    Title = "retpircS#8599",
-    Text = "retpircS#8599",
-    Duration = 2.5,
-})
-
   
   
 --locals
@@ -91,8 +82,8 @@ while true do
 end
 end)
 
-  
-  Exploits:NewButton("UIGOTO(BETA)", "BETA FOR ME", function()
+
+ Exploits:NewButton("UIGOTO(BETA)", "BETA FOR ME", function()
       local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
@@ -1335,4 +1326,36 @@ chr.RightFoot.Transparency = "1"
 
     
 end)
+
+
+
+Exploits:NewButton("AutoStomp", "By me", function()
+while true do
+    local args = {
+    [1] = "Stomp"
+}
+
+game:GetService("ReplicatedStorage").MainEvent:FireServer(unpack(args))
+wait(0.3)
+
+end
+end)
+
+
+
+
+
+
+end
+
+
+while true do
+local CoreGui = game:GetService("StarterGui") 
+  CoreGui:SetCore("SendNotification", {
+    Title = "retpircS#8599",
+    Text = "retpircS#8599",
+    Duration = 2.5,
+})
+
+wait(180)
 end
