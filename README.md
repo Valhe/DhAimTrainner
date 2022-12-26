@@ -1347,15 +1347,3 @@ end)
 
 
 end
-
-
-while true do
-local CoreGui = game:GetService("StarterGui") 
-  CoreGui:SetCore("SendNotification", {
-    Title = "retpircS#8599",
-    Text = "retpircS#8599",
-    Duration = 2.5,
-})
-
-wait(180)
-end
